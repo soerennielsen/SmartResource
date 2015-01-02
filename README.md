@@ -21,6 +21,7 @@ Read more ([here](http://soerennielsen.wordpress.com/2014/02/20/announcing-smart
 
 ##Remarks
 I made this extension to mostly cater for SharePoint specific resources. It's equally applicable for other development scenarios, but the method call in the default patterns (change to your needs!) is:
+```
         /// <summary>
         /// Fetch resource string from a resource file in the \Resources folder given by the named key
         ///
@@ -44,7 +45,7 @@ I made this extension to mostly cater for SharePoint specific resources. It's eq
 
             return SPUtility.GetLocalizedString(key, split[0], (uint)System.Globalization.CultureInfo.CurrentUICulture.LCID);
         }
-
+```
 You'll need to add it somewhere in your code. Note that it is dependent on the SPUtility class from SharePoint, so if you're not in SharePoint mode, you'll need to modify it or use another replace pattern (see in options).
 
 
