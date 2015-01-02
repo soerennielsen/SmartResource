@@ -58,11 +58,11 @@ Do NOT publish this as your own extension at the visual studio gallery - instead
 ##Change log
 
 1.0.0.1
-•Bug fixes. Quotes were manhandled in C#/VB files, they are treated better now 
-•Feature: Another replace pattern option, that allows you to use std. .Net resource patterns if you do not want to roll your own method. Note: You have to update your settings in the Options pane if you modified the defaults in the previous version. 
+- Bug fixes. Quotes were manhandled in C#/VB files, they are treated better now 
+- Feature: Another replace pattern option, that allows you to use std. .Net resource patterns if you do not want to roll your own method. Note: You have to update your settings in the Options pane if you modified the defaults in the previous version. 
 
 1.0
-•Initial public release. Fully featured. 
+- Initial public release. Fully featured. 
 
 
 
