@@ -1,0 +1,20 @@
+﻿<UserControl x:Class="DelegateAS.SmartResource.AboutPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="463" d:DesignWidth="476">
+    <Grid HorizontalAlignment="Left" Width="486" Height="461" VerticalAlignment="Top" Margin="0,0,0,-106">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="475*"/>
+            <ColumnDefinition Width="7*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="346*"/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Height="442" Margin="10,10,27,-35" TextWrapping="Wrap" VerticalAlignment="Top" Grid.RowSpan="2"><Run FontWeight="Bold" Language="da-dk" Text="What is this?"/><LineBreak/><Run Language="da-dk" Text="This is a small helper extension that helps you manage resources a lot quicker and easier. "/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run Language="da-dk" Text="It was written for SharePoint, but can be generally used, if you modify the replace patters appropriately. "/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run FontWeight="Bold" Language="da-dk" Text="The way it works:"/><LineBreak/><Run Language="da-dk" Text="1. You select some text that you want to move to the resource file"/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run Language="da-dk" Text="2. Hit ALT+R, ALT+R (or whatever shortcut you bind to the &quot;Smart Resource Insert&quot; command in "/><Run FontStyle="Italic" Language="da-dk" Text="Tools"/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run Language="da-dk" Text="3. Type the name of a new resource key or choose an existing"/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run Language="da-dk" Text="4. Done. Your text is replaced and the resx file updated :-)"/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run Language="da-dk" Text="The .resx file is located by looking for 1) one named the same as your assembly, 2) then one named &quot;Resources.resx&quot; and 3) finally just a .resx file. It will fail if there is more than one suitable candidate."/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run Language="da-dk"/><LineBreak/><Run FontWeight="Bold" Language="da-dk" Text="Created by"/><LineBreak/><Hyperlink NavigateUri="http://soerennielsen.wordpress.com/2014/02/20/announcing-smart-resource-vs2013-extension/"><Run Text="Søren Laurits Nielsen (soerennielsen.wordpress.com)"/></Hyperlink><LineBreak/><Run Language="da-dk" Text="sln@delegate.dk "/><LineBreak/><Run Language="da-dk" Text="Delegate A/S"/></TextBlock>
+
+    </Grid>
+</UserControl>

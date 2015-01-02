@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="2e4a7618-f19e-422a-8c5f-f8a564806db6" Version="1.0.0.1" Language="en-US" Publisher="Søren Laurits Nielsen, Delegate A/S" />
+    <DisplayName>SmartResource</DisplayName>
+    <Description xml:space="preserve">Extension for easier resource handling. 
+
+Select a text, hit the hotkey, type the key name and then your text will be moved to the resource file and a proper tag inserted in your source.</Description>
+    <MoreInfo>http://soerennielsen.wordpress.com/2014/02/20/announcing-smart-resource-vs2013-extension/</MoreInfo>
+    <License>License.txt</License>
+    <GettingStartedGuide>http://soerennielsen.wordpress.com/2014/02/20/announcing-smart-resource-vs2013-extension/</GettingStartedGuide>
+    <ReleaseNotes>http://soerennielsen.wordpress.com/2014/02/20/announcing-smart-resource-vs2013-extension/</ReleaseNotes>
+    <Icon>Resources\delegate.ico</Icon>
+    <Tags>Delegate;Resource;Resources;SharePoint;Smart Resource</Tags>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[12.0,13.0)" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.IntegratedShell" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Premium" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.Ultimate" />
+    <InstallationTarget Version="[12.0,13.0)" Id="Microsoft.VisualStudio.VSLS" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.11.0" DisplayName="Visual Studio MPF 11.0" d:Source="Installed" Version="[11.0,13.0)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    <Asset Type="Microsoft.VisualStudio.ToolboxControl" d:Source="Project" d:ProjectName="%CurrentProject%" d:VsixSubPath="Smart Resource" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+  </Assets>
+</PackageManifest>

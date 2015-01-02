@@ -1,0 +1,4 @@
+*.komodoproject
+*.xpi
+_dist
+docs/_build/
